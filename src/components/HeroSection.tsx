@@ -7,6 +7,11 @@ const HeroSection = () => {
     element?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const scrollToPackages = () => {
+    const element = document.getElementById('packages');
+    element?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Background Elements */}
@@ -36,46 +41,48 @@ const HeroSection = () => {
         <div className="text-center">
           <div className="glass-card rounded-3xl p-8 md:p-12 max-w-7xl mx-auto shadow-2xl animate-fade-in">
             
-            {/* Marketing Specialties Banner */}
+            {/* Credentials Banner */}
             <div className="flex flex-wrap justify-center gap-3 mb-6">
               <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium flex items-center gap-2">
-                <Search size={16} />
-                SEO Expert
-              </span>
-              <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium flex items-center gap-2">
                 <Target size={16} />
-                PPC Specialist
+                Top Rated on Fiverr
               </span>
               <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium flex items-center gap-2">
                 <BarChart3 size={16} />
-                Analytics Pro
+                Digital Marketing Strategist
+              </span>
+              <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium flex items-center gap-2">
+                <Search size={16} />
+                SEO Specialist
               </span>
             </div>
             
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-              Performance Marketing
-              <span className="block text-primary">Expert</span>
+              Digital Marketing
+              <span className="block text-primary">Strategist</span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Driving growth through data-driven SEO strategies, performance marketing, and app growth campaigns. 
-              <span className="text-primary font-semibold">2+ years</span> of proven results.
+            <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto leading-relaxed">
+              Specializing in <span className="text-primary font-semibold">Google Ads, Meta Ads, TikTok Ads & SEO</span>. 
+              With <span className="text-primary font-semibold">6+ years</span> of experience and 
+              <span className="text-primary font-semibold"> 500+ completed projects</span>, I help businesses 
+              increase visibility by <span className="text-primary font-semibold">1000%+</span>.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
               <button 
-                onClick={scrollToContact}
+                onClick={scrollToPackages}
                 className="bg-primary text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-teal-600 transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex items-center gap-2"
               >
-                Let's Work Together
+                View Packages
                 <ArrowRight size={20} />
               </button>
               
               <button 
-                onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={scrollToContact}
                 className="border-2 border-primary text-primary px-8 py-4 rounded-full font-semibold text-lg hover:bg-primary hover:text-white transition-all duration-300 transform hover:scale-105"
               >
-                Learn More
+                Get Free Consultation
               </button>
             </div>
 
@@ -87,7 +94,7 @@ const HeroSection = () => {
                     <TrendingUp className="text-primary" size={20} />
                   </div>
                 </div>
-                <div className="text-3xl font-bold text-primary mb-2">2+</div>
+                <div className="text-3xl font-bold text-primary mb-2">6+</div>
                 <div className="text-gray-600">Years Experience</div>
               </div>
               <div className="glass p-6 rounded-2xl group hover:shadow-xl transition-all duration-300">
@@ -96,8 +103,8 @@ const HeroSection = () => {
                     <Target className="text-primary" size={20} />
                   </div>
                 </div>
-                <div className="text-3xl font-bold text-primary mb-2">50+</div>
-                <div className="text-gray-600">Campaigns Managed</div>
+                <div className="text-3xl font-bold text-primary mb-2">500+</div>
+                <div className="text-gray-600">Projects Completed</div>
               </div>
               <div className="glass p-6 rounded-2xl group hover:shadow-xl transition-all duration-300">
                 <div className="flex items-center justify-center mb-3">
@@ -105,8 +112,8 @@ const HeroSection = () => {
                     <BarChart3 className="text-primary" size={20} />
                   </div>
                 </div>
-                <div className="text-3xl font-bold text-primary mb-2">300%</div>
-                <div className="text-gray-600">Avg. Growth Rate</div>
+                <div className="text-3xl font-bold text-primary mb-2">1000%+</div>
+                <div className="text-gray-600">Visibility Increase</div>
               </div>
             </div>
           </div>

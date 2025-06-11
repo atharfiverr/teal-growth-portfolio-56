@@ -24,7 +24,7 @@ const HeroSection = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-20">
         <div className="text-center">
-          <div className="glass-card rounded-3xl p-8 md:p-12 max-w-6xl mx-auto shadow-2xl animate-fade-in">
+          <div className="glass-card rounded-3xl p-8 md:p-12 max-w-7xl mx-auto shadow-2xl animate-fade-in">
             
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
               Performance Marketing

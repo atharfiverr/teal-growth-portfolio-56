@@ -1,4 +1,5 @@
-import { ArrowRight, TrendingUp, Target, Zap } from 'lucide-react';
+
+import { ArrowRight, TrendingUp, Target, Zap, BarChart3, Globe, Users, Search } from 'lucide-react';
 
 const HeroSection = () => {
   const scrollToContact = () => {
@@ -11,7 +12,7 @@ const HeroSection = () => {
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-teal-50"></div>
       
-      {/* Floating Elements */}
+      {/* Enhanced Floating Elements */}
       <div className="absolute top-20 left-10 opacity-20 animate-float">
         <TrendingUp size={60} className="text-primary" />
       </div>
@@ -21,10 +22,35 @@ const HeroSection = () => {
       <div className="absolute bottom-40 left-20 opacity-20 animate-float" style={{ animationDelay: '2s' }}>
         <Zap size={40} className="text-primary" />
       </div>
+      <div className="absolute top-32 right-32 opacity-15 animate-float" style={{ animationDelay: '0.5s' }}>
+        <BarChart3 size={45} className="text-primary" />
+      </div>
+      <div className="absolute bottom-32 right-16 opacity-15 animate-float" style={{ animationDelay: '1.5s' }}>
+        <Globe size={35} className="text-primary" />
+      </div>
+      <div className="absolute top-60 left-32 opacity-15 animate-float" style={{ animationDelay: '2.5s' }}>
+        <Search size={38} className="text-primary" />
+      </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-20">
         <div className="text-center">
           <div className="glass-card rounded-3xl p-8 md:p-12 max-w-7xl mx-auto shadow-2xl animate-fade-in">
+            
+            {/* Marketing Specialties Banner */}
+            <div className="flex flex-wrap justify-center gap-3 mb-6">
+              <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium flex items-center gap-2">
+                <Search size={16} />
+                SEO Expert
+              </span>
+              <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium flex items-center gap-2">
+                <Target size={16} />
+                PPC Specialist
+              </span>
+              <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium flex items-center gap-2">
+                <BarChart3 size={16} />
+                Analytics Pro
+              </span>
+            </div>
             
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
               Performance Marketing
@@ -53,17 +79,32 @@ const HeroSection = () => {
               </button>
             </div>
 
-            {/* Stats */}
+            {/* Enhanced Stats with Icons */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-              <div className="glass p-6 rounded-2xl">
+              <div className="glass p-6 rounded-2xl group hover:shadow-xl transition-all duration-300">
+                <div className="flex items-center justify-center mb-3">
+                  <div className="bg-primary/10 w-10 h-10 rounded-xl flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                    <TrendingUp className="text-primary" size={20} />
+                  </div>
+                </div>
                 <div className="text-3xl font-bold text-primary mb-2">2+</div>
                 <div className="text-gray-600">Years Experience</div>
               </div>
-              <div className="glass p-6 rounded-2xl">
+              <div className="glass p-6 rounded-2xl group hover:shadow-xl transition-all duration-300">
+                <div className="flex items-center justify-center mb-3">
+                  <div className="bg-primary/10 w-10 h-10 rounded-xl flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                    <Target className="text-primary" size={20} />
+                  </div>
+                </div>
                 <div className="text-3xl font-bold text-primary mb-2">50+</div>
                 <div className="text-gray-600">Campaigns Managed</div>
               </div>
-              <div className="glass p-6 rounded-2xl">
+              <div className="glass p-6 rounded-2xl group hover:shadow-xl transition-all duration-300">
+                <div className="flex items-center justify-center mb-3">
+                  <div className="bg-primary/10 w-10 h-10 rounded-xl flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                    <BarChart3 className="text-primary" size={20} />
+                  </div>
+                </div>
                 <div className="text-3xl font-bold text-primary mb-2">300%</div>
                 <div className="text-gray-600">Avg. Growth Rate</div>
               </div>
